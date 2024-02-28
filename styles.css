@@ -260,6 +260,7 @@ a:hover {
     display: flex;
     column-gap: 37px;
     font-family: var(--fonts-family-accent);
+    font-size: 21px;
  }
 
  .header-menu-icons-list {
