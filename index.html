@@ -1,44 +1,148 @@
-# site
-мой тестовый сайт
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>V’store</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+            <nav class="header-menu">
+                <ul class="header-menu-list">
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="/">Collections</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="/">New</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="/">Home</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <nav class="header-menu-right">
 
+                <nav class="header-menu-icons">
+                    <ul class="header-menu-icons-list">
+                        <a class="header-icons_3">
+                            <img
+                                class="header-icons-search"
+                                src="./icons/search.svg"
+                                alt="search"
+                                width="27" height="27" loading="lazy"
+                            />           
+                        </a> 
+                        <a class="header-icons_1">
+                            <img
+                                class="header-icons-like"
+                                src="./icons/like.svg"
+                                alt="like"
+                                width="27" height="27" loading="lazy"
+                            />
+                        </a>
+                        <a class="header-icons_2">
+                            <img
+                                class="header-icons-person"
+                                src="./icons/person.svg"
+                                alt="person"
+                                width="27" height="27" loading="lazy"
+                            />
+                        </a>  
+                    </ul>
+                </nav>
+
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link_1" href="/">CART (1)</a>
+                        </li>
+                    </ul>
+                </nav>
+            </nav>
     </header>
-    <section class="about">
-      <h1>Личная страница Михаила Михайловича</h1>
-        Мой второй сайт: <a href="https://yandex.ru/">Сайт Яндекса</a>
-        <img src="images/Speranskiy-M.png" alt="Фотография Михаила Михайловичаы" />
-        <a href="#technopark">Переход на главу 2</a>
-    </section>
-    <section id="technopark">
-        <div>Технопарк -- это круто!</div> <div>Технопарк -- это круто!</div>
+    <main class="content">
+        <section class="content-catalog">
+            <div class="catalog-body">
+                <div class="catalog">
+                    Catalog
+                </div>
+                <div class="category">
+                    Best Selling
+                    <img src="./icons/arrow.svg" width="14" height="7">
+                </div>
+            </div>
+        </section>
+        <section class="middle"> 
+            <aside class="filter">
 
-        <span>Технопарк -- это знания!</span> <span>Технопарк -- это знания!</span>
+                <div class="praces">
+                    PRACES
+                    <img src="./icons/arrow.svg" width="14" height="7">
+                </div>
 
-        <form action="/search">
-            <input type="text"> – поле для ввода текста
-            <label>Введите имя
-                <input type="text">
-            </label>
-            <label>Введите пароль
-                <input type="password">
-            </label>
-            <label>Введите пароль
-                <input type="pin" placeholder="1234">
-            </label>
-            <textarea rows="5" cols="30">textarea с 5 строками и 30 столбцами</textarea>
-        </form>
-    </section>
-    <footer>
-        <address>РГПУ им. Герцена</address>
-        2024 &copy; все права защищены
+                <div class="genre">
+                    GENRE
+                    <img src="./icons/arrow.svg" width="14" height="7">
+                </div>
+
+                <div class="format">
+                    FORMAT
+                    <img src="./icons/arrow.svg" width="14" height="7">
+                </div>
+
+                <div class="stock_status">
+                    STOCK_STATUS
+                    <img src="./icons/arrow.svg" width="14" height="7">
+                </div>
+
+
+            </aside>
+
+            <section class="products">
+                <article class="vinyl_record_1">
+                    пластинка
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="logo">
+
+            <div class="logo_top">
+                V’store
+            </div>
+
+            <div class="logo_bottom">
+                vinyl record store
+            </div>
+
+        </div>
+
+        <nav class="footer-menu">
+            <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                    <a class="footer-menu-link" href="/">Collections</a>
+                </li>
+                <li class="footer-menu-item">
+                    <a class="footer-menu-link" href="/">Contacts</a>
+                </li>
+                <li class="footer-menu-item">
+                    <a class="footer-menu-link" href="/">Shopping&payment</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="payment">
+            <div class="payment_images">
+                <img src="./images/visa_MasterCard.png" width="185" height="74">
+                <img src="./images/PayPal.png" width="143" height="38">
+            </div>
+            payment payment payment
+        </div>
     </footer>
+    
 </body>
 </html>
