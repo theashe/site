@@ -399,5 +399,5 @@ a:hover {
 .payment_images {
   display: flex;
   align-items: center;
-  column-gap: 0px;
+  column-gap: 5px;
 }
