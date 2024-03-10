@@ -253,7 +253,7 @@ a:hover {
     align-items: center;
     column-gap: 20px;
     background-color: var(--color-dark-grey);
-    height: 66px;
+    height: 74px;
  }
 
  .header-menu-list {
@@ -265,7 +265,6 @@ a:hover {
  .header-menu-icons-list {
     display: flex;
     column-gap: 31px;
-
  }
 
  .header-menu-link {
@@ -286,6 +285,25 @@ a:hover {
   column-gap: 61px;
  }
 
+ @media (max-width: 1380px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+  } 
+  .header-menu-list {
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+  .header-menu-icons-list { 
+    order: 1;
+    flex-basis: 100%;
+    column-gap: 8px
+  }
+  .header-menu-right {
+    column-gap: 12px;
+    flex-wrap: wrap;
+  }
+ }
  .catalog-body {
   padding: 60px 375px 80px;
   display: flex;
@@ -364,11 +382,13 @@ a:hover {
   align-items: center;
   background-color: var(--color-dark-grey);
   height: 300px;
+  column-gap: 20px;
  }
 
  .footer-menu-list {
   display: flex;
-  column-gap: 71px;
+  column-gap: 50px;
+  
   font-family: var(--fonts-family-accent);
 }
 
@@ -401,3 +421,20 @@ a:hover {
   align-items: center;
   column-gap: 5px;
 }
+
+@media (max-width: 1380px) {
+  .footer {
+    flex-wrap: wrap;
+    height: 100px;
+    order: 1;
+    flex-basis: 100%;
+    height: auto;
+  } 
+  .footer-menu-list {
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  .payment {
+    flex-wrap: wrap;
+  }
+ }
