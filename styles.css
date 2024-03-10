@@ -342,7 +342,8 @@ a:hover {
   font-family: 'Maghfirea';
 }
 
-.genre {
+.genre-title {
+  padding: 20px 0px 10px;
   display: flex;
   align-items:center;
   flex-direction:row;
@@ -350,8 +351,15 @@ a:hover {
   font-size: 42px;
   font-family: 'Maghfirea';
 }
-
-.format {
+.genre-content {
+  display: flex;
+  column-gap: 33px;
+  font-size: 22px;
+  font-family: "Caudex";
+  padding: 20px 0px 0px;
+}
+.format-title {
+  padding: 60px 0px 10px;
   display: flex;
   align-items:center;
   flex-direction:row;
@@ -359,8 +367,15 @@ a:hover {
   font-size: 42px;
   font-family: 'Maghfirea';
 }
-
-.stock_status {
+.format-content {
+  display: flex;
+  column-gap: 33px;
+  font-size: 22px;
+  font-family: "Caudex";
+  padding: 20px 0px 0px;
+}
+.stock_status-title {
+  padding: 60px 0px 10px;
   display: flex;
   align-items:center;
   flex-direction:row;
@@ -368,11 +383,21 @@ a:hover {
   font-size: 42px;
   font-family: 'Maghfirea';
 }
-
+.stock_status-content {
+  display: flex;
+  column-gap: 33px;
+  font-size: 22px;
+  font-family: "Caudex";
+  padding: 20px 0px 0px;
+}
 
  .products{
   width: 865px;
-  border: 5px solid #403D39;
+ }
+
+ .background_for_vinyl {
+  position: relative;
+  z-index: 2;
  }
 
  .footer {
