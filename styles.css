@@ -201,11 +201,14 @@
 
     --font-family-base: 'Maghfirea', sans-serif;
     --fonts-family-accent: 'Caudex', sans-serif;
+    --font-size-3xl-2: 22.2px;
+    --font-size-lg: 18px;
 
     --container-width: 1167px;
     --container-padding-x: 15px;
 
     --transition-duration: 0.2s;
+
 }
 
 body {
@@ -253,20 +256,18 @@ a:hover {
     align-items: center;
     column-gap: 20px;
     background-color: var(--color-dark-grey);
-    height: 66px;
+    height: 74px;
  }
 
  .header-menu-list {
     display: flex;
     column-gap: 37px;
     font-family: var(--fonts-family-accent);
-    font-size: 21px;
  }
 
  .header-menu-icons-list {
     display: flex;
     column-gap: 31px;
-
  }
 
  .header-menu-link {
@@ -287,6 +288,25 @@ a:hover {
   column-gap: 61px;
  }
 
+ @media (max-width: 1380px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+  } 
+  .header-menu-list {
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+  .header-menu-icons-list { 
+    order: 1;
+    flex-basis: 100%;
+    column-gap: 8px
+  }
+  .header-menu-right {
+    column-gap: 12px;
+    flex-wrap: wrap;
+  }
+ }
  .catalog-body {
   padding: 60px 375px 80px;
   display: flex;
@@ -325,7 +345,8 @@ a:hover {
   font-family: 'Maghfirea';
 }
 
-.genre {
+.genre-title {
+  padding: 20px 0px 10px;
   display: flex;
   align-items:center;
   flex-direction:row;
@@ -333,8 +354,15 @@ a:hover {
   font-size: 42px;
   font-family: 'Maghfirea';
 }
-
-.format {
+.genre-content {
+  display: flex;
+  column-gap: 33px;
+  font-size: 22px;
+  font-family: "Caudex";
+  padding: 20px 0px 0px;
+}
+.format-title {
+  padding: 60px 0px 10px;
   display: flex;
   align-items:center;
   flex-direction:row;
@@ -342,8 +370,15 @@ a:hover {
   font-size: 42px;
   font-family: 'Maghfirea';
 }
-
-.stock_status {
+.format-content {
+  display: flex;
+  column-gap: 33px;
+  font-size: 22px;
+  font-family: "Caudex";
+  padding: 20px 0px 0px;
+}
+.stock_status-title {
+  padding: 60px 0px 10px;
   display: flex;
   align-items:center;
   flex-direction:row;
@@ -351,13 +386,152 @@ a:hover {
   font-size: 42px;
   font-family: 'Maghfirea';
 }
-
-
- .products{
+.stock_status-content {
   display: flex;
-  width: 865px;
-  border: 5px solid #ffffff;
+  column-gap: 33px;
+  font-size: 22px;
+  font-family: "Caudex";
+  padding: 20px 0px 0px;
+}
+
+.frame-child{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 22.65px;
+  background-color: #d9d9d9;
+  width: 250px; 
+  height: 221px;
+}
+ .products{ 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  padding: 109px 94px 0 94px;
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  text-align: left;
+
  }
+
+ .frame-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  padding: 207px 94px 0 94px;
+  position: relative;
+ }
+
+.rectangle-parent {
+    height: 221px;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 72px;
+    left: 0;
+}
+
+ .heart_black {
+  position: absolute;
+  overflow: hidden;
+  top: 8.5px;
+  right: 20px;
+  width: 19px;
+  height: 19px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 3;
+  flex-shrink: 0;
+  object-fit: contain;
+  top: 8.5px;
+
+  left: 216px;
+ }
+
+ .vinyl_record {
+  height: 172px;
+  width: 183px;
+  top: 7.92%;
+  right: 0;
+  bottom: 14.21%;
+  left: 26.99%;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+ }
+
+.cover {
+  position: absolute;
+  overflow: hidden;
+  height: 161px;
+  width: 161px;
+  top: 12.67%;
+  right: 30.23%;
+  bottom: 14.34%;
+  left: 5.28%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 2;
+} 
+
+.song-author-cost {  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.song-author { 
+  position: relative;
+  z-index: 3;
+}
+
+.song{ 
+  font-family: 'Maghfirea';
+  font-size: 22px;
+  margin: 0;
+} 
+
+.author{ 
+  font-family: 'Maghfirea';
+  font-size: 22px;
+  margin: 0; 
+}
+
+.cost { 
+  position: relative;
+  display: inline-block;
+  font-family: 'Caudex-Bold';
+  font-size: 22px;
+  white-space: nowrap;
+  margin-top: -0.4px; 
+}
+
+
+@media screen and (max-width: 1200px) {
+  .products {
+    flex-wrap: wrap;
+    height: 100px;
+    order: 1;
+    flex-basis: 100%;
+    height: auto;
+
+  }
+}
 
  .footer {
   padding-inline: 300px;
@@ -366,11 +540,13 @@ a:hover {
   align-items: center;
   background-color: var(--color-dark-grey);
   height: 300px;
+  column-gap: 20px;
  }
 
  .footer-menu-list {
   display: flex;
-  column-gap: 71px;
+  column-gap: 50px;
+  
   font-family: var(--fonts-family-accent);
 }
 
@@ -401,5 +577,22 @@ a:hover {
 .payment_images {
   display: flex;
   align-items: center;
-  column-gap: 0px;
+  column-gap: 5px;
 }
+
+@media (max-width: 1380px) {
+  .footer {
+    flex-wrap: wrap;
+    height: 100px;
+    order: 1;
+    flex-basis: 100%;
+    height: auto;
+  } 
+  .footer-menu-list {
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  .payment {
+    flex-wrap: wrap;
+  }
+ }
