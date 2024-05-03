@@ -307,6 +307,11 @@ a:hover {
     flex-wrap: wrap;
   }
  }
+
+ .middle {
+  display: flex;
+ }
+
  .catalog-body {
   padding: 60px 375px 80px;
   display: flex;
@@ -315,6 +320,45 @@ a:hover {
   align-items: center;
   background-color: var(--color-light);
   
+ }
+
+ /* Checkbox */
+ .checkbox{
+  position: relative;
+  display: flex;
+ }
+
+ .checkbox_input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+ }
+
+ .checkbox_label{
+  padding-left: 64px;
+  
+ }
+
+ .checkbox_label:before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 31px;
+
+  border: 3px solid #EB5E28;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+ }
+
+
+
+ .checkbox_input:checked + .checkbox_label::before {
+  background: #EB5E28;
+  border-color: #EB5E28;
  }
 
  .catalog {
@@ -332,8 +376,9 @@ a:hover {
 
  .filter {
   width: 276px;
-  padding-inline: 377px;
+  padding-left: 377px;
   display:grid;
+  padding-bottom: 40px;
  }
 
  .praces {
@@ -413,7 +458,6 @@ a:hover {
   align-items: flex-start;
   justify-content: flex-start;
   justify-content: flex-end;
-  padding: 109px 94px 0 94px;
   position: relative;
   width: 100%;
   overflow: auto;
@@ -429,7 +473,7 @@ a:hover {
   align-items: flex-start;
   justify-content: flex-start;
   justify-content: flex-end;
-  padding: 207px 94px 0 94px;
+  padding: 207px 94px 0px 94px;
   position: relative;
  }
 
