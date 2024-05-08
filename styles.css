@@ -250,7 +250,7 @@ a:hover {
 
 
  header {
-    padding-inline: 377px;
+    padding-inline: 360px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -310,10 +310,13 @@ a:hover {
 
  .middle {
   display: flex;
+  margin-inline: 360px;
+  column-gap: 50px;
  }
 
  .catalog-body {
-  padding: 60px 375px 80px;
+  padding: 60px 0px 80px;
+  margin-inline: 360px;
   display: flex;
   flex-direction:row;
   justify-content: space-between;
@@ -376,7 +379,7 @@ a:hover {
 
  .filter {
   width: 276px;
-  padding-left: 377px;
+
   display:grid;
   padding-bottom: 40px;
  }
@@ -441,12 +444,7 @@ a:hover {
 
 .frame-child{
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  
   border-radius: 22.65px;
   background-color: #d9d9d9;
   width: 250px; 
@@ -455,15 +453,15 @@ a:hover {
  .products{ 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  justify-content: flex-end;
+  align-items:flex-start;
+  justify-content: space-between;
   position: relative;
-  width: 100%;
+  column-gap: 40px;
   overflow: auto;
   box-sizing: border-box;
   letter-spacing: normal;
   text-align: left;
+  margin-left: auto;
 
  }
 
@@ -473,7 +471,7 @@ a:hover {
   align-items: flex-start;
   justify-content: flex-start;
   justify-content: flex-end;
-  padding: 207px 94px 0px 94px;
+  padding: 200px 90px 0px 90px;
   position: relative;
  }
 
@@ -566,16 +564,20 @@ a:hover {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1880px) {
   .products {
     flex-wrap: wrap;
     height: 100px;
     order: 1;
     flex-basis: 100%;
     height: auto;
-
+    display: flex;
+    column-gap: 10px;
+    margin-inline: 200px;
   }
 }
+ 
+
 
  .footer {
   padding-inline: 300px;
@@ -624,7 +626,12 @@ a:hover {
   column-gap: 5px;
 }
 
-@media (max-width: 1380px) {
+  
+@media (max-width: 1600px) {
+  .middle {
+    display: flex;
+    margin-inline: 40px;
+  }
   .footer {
     flex-wrap: wrap;
     height: 100px;
